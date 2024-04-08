@@ -1,9 +1,7 @@
-import sys
 import time
-import datetime
 import random
 
-
+print("Made by VitaAeterna")
 listOfNumbersBubble = []
 for i in range(1000):
     listOfNumbersBubble.append(random.randint(0, 1000))
@@ -31,8 +29,7 @@ def BubbleSort(listOfNumbers):
     endTime = time.time()
     print("Sorting with Bubble Sort took ", endTime - startTime)
     print("\n")
-    print("\n")
-    print("\n")
+
 
 
 
@@ -66,8 +63,7 @@ def BucketSort(listOfNumbers):
     endTime = time.time()
     print("Sorting with Bucket Sort took ", endTime - startTime)
     print("\n")
-    print("\n")
-    print("\n")
+
 
 
 
@@ -81,10 +77,7 @@ def InsertionSort(listOfNumbersInsertion):
             j -= 1
         listOfNumbersInsertion[j + 1] = key
     endTime = time.time()
-    print(listOfNumbersInsertion)
     print("Sorting with Insertion Sort took ", endTime - startTime)
-    print("\n")
-    print("\n")
     print("\n")
 
 
@@ -104,7 +97,6 @@ def BrickSort(arr):
             if arr[i] > arr[i+1]: 
                 arr[i], arr[i+1] = arr[i+1], arr[i] 
                 isSorted = 0
-    print(arr)
     endTime = time.time()
     print("Brick sort took ", endTime - startTime)
 
@@ -112,3 +104,4 @@ BubbleSort(listOfNumbersBubble)
 BucketSort(listOfFloatsBucket)
 InsertionSort(listOfNumbersInsertion)
 BrickSort(arr)
+input()
